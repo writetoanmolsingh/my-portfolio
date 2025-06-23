@@ -1,6 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import AboutImg from '../../assets/about.png';
 
 const AboutSection = styled.section`
   background-color: ${props => props.theme.colors.sectionBg};
@@ -81,8 +81,8 @@ const About = () => {
         <AboutContent>
           <AboutImage>
             <motion.img 
-              src="/about.png" 
-              alt="About Me" 
+              src={AboutImg}
+              alt="About Me"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -96,7 +96,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              I'm a passionate web developer and designer with a strong focus on creating beautiful, functional, and user-friendly websites. With several years of experience in the field, I've developed a keen eye for detail and a love for clean, efficient code.
+              I’m Anmol Singh Chhabra, a Full Stack Developer with a strong foundation in building scalable, high-performance web applications. Proficient in modern technologies like React.js, Node.js, Next.js, and MongoDB, I specialize in creating responsive interfaces and efficient backend systems. I’ve also worked extensively with Google Cloud's Apigee X for API management and security.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -104,7 +104,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              My journey in web development started when I was in college, and since then, I've been constantly learning and improving my skills. I specialize in front-end development, but I'm also comfortable working with back-end technologies.
+              I’ve contributed to teams at Tech Mahindra, Jamsfy Technologies, and Physiz AgTech, leading projects on microservices migration, UI revamps, and serverless architecture. My freelance work includes building a shipment tracking system for Lactalis Canada, a responsive personal portfolio, and a GPT-4o-powered AI chatbot that processes PDFs to deliver insights.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -112,7 +112,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              When I'm not coding, you can find me exploring new design trends, learning new technologies, or enjoying outdoor activities. I believe in continuous learning and always strive to stay updated with the latest industry standards and best practices.
+              I’m passionate about merging creativity with technology to solve real-world problems. I enjoy working with AI tools, prompt engineering, and crafting interactive applications that elevate user experience. Eager to learn and grow, I strive to stay at the forefront of web development and innovation.
             </motion.p>
           </AboutText>
         </AboutContent>

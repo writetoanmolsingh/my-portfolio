@@ -4,11 +4,15 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 // Import React Icons
 import { 
-  FaHtml5, FaJs, FaReact, FaVuejs, 
-  FaNodeJs, FaDatabase, 
-  FaFigma, FaPaintBrush
+  FaHtml5, FaJs, FaReact, FaTachometerAlt, 
+  FaNodeJs, FaGoogle, 
+  FaLock
 } from 'react-icons/fa';
-import { SiExpress, SiMongodb, SiAdobexd, SiAdobephotoshop, SiAdobeillustrator } from 'react-icons/si';
+import { SiExpress, SiMongodb, SiJsonwebtokens, SiStyledcomponents, SiRedux, SiStrapi, SiGooglecloud  } from 'react-icons/si';
+import { TbBrandNextjs, TbApi } from "react-icons/tb";
+import { MdOutlinePolicy } from "react-icons/md";
+import { VscDebug } from "react-icons/vsc";
+import { IoLogoPwa } from "react-icons/io5";
 
 const SkillsSection = styled.section`
   padding: 100px 0;
@@ -149,30 +153,36 @@ const Skills = () => {
       category: 'Frontend Development',
       icon: <FaReact />,
       skills: [
-        { name: 'HTML/CSS', level: 90, icon: <FaHtml5 /> },
         { name: 'JavaScript', level: 85, icon: <FaJs /> },
         { name: 'React', level: 80, icon: <FaReact /> },
-        { name: 'Vue.js', level: 75, icon: <FaVuejs /> },
+        { name: 'Redux', level: 80, icon: <SiRedux /> },
+        { name: 'Next.js', level: 75, icon: <TbBrandNextjs /> },
+        { name: 'Progressive Web Apps (PWAs)', level: 80, icon: <IoLogoPwa /> },
+        { name: 'HTML/CSS', level: 90, icon: <FaHtml5 /> },
+        { name: 'Styled Components', level: 80, icon: <SiStyledcomponents /> },
       ],
     },
     {
       category: 'Backend Development',
       icon: <FaNodeJs />,
       skills: [
-        { name: 'Node.js', level: 75, icon: <FaNodeJs /> },
+        { name: 'RESTful APIs / CRUD', level: 75, icon: <TbApi /> },
+        { name: 'Node.js', level: 70, icon: <FaNodeJs /> },
         { name: 'Express', level: 70, icon: <SiExpress /> },
         { name: 'MongoDB', level: 65, icon: <SiMongodb /> },
-        { name: 'SQL', level: 60, icon: <FaDatabase /> },
+        { name: 'Strapi', level: 60, icon: <SiStrapi /> },
       ],
     },
     {
-      category: 'Design',
-      icon: <FaPaintBrush />,
+      category: 'API Gateways',
+      icon: <FaGoogle />,
       skills: [
-        { name: 'Figma', level: 85, icon: <FaFigma /> },
-        { name: 'Adobe XD', level: 75, icon: <SiAdobexd /> },
-        { name: 'Photoshop', level: 70, icon: <SiAdobephotoshop /> },
-        { name: 'Illustrator', level: 65, icon: <SiAdobeillustrator /> },
+        { name: 'Google’s Apigee API Management Platform', level: 85, icon: <SiGooglecloud /> },
+        { name: 'Basic / OAuth 2.0 / JWT / JWS', level: 75, icon: <FaLock /> },
+        { name: 'Caching, Data Masking and Threat Protection', level: 75, icon: <SiJsonwebtokens /> },
+        { name: 'Routing, Throttling and Rate Limiting', level: 75, icon: <FaTachometerAlt /> },
+        { name: 'Policies / Sharedflows', level: 70, icon: <MdOutlinePolicy /> },
+        { name: 'Cloud Logging and Debugging', level: 80, icon: <VscDebug /> },
       ],
     },
   ];

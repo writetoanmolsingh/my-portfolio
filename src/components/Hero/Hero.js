@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
@@ -40,16 +40,16 @@ const HeroContent = styled.div`
   }
 `;
 
-const HeroImage = styled.div`
-  flex: 1;
-  text-align: center;
+// const HeroImage = styled.div`
+//   flex: 1;
+//   text-align: center;
   
-  img {
-    max-width: 80%;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  }
-`;
+//   img {
+//     max-width: 80%;
+//     border-radius: 20px;
+//     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+//   }
+// `;
 
 const HeroTitle = styled(motion.h1)`
   font-size: 48px;
@@ -183,7 +183,7 @@ const Hero = () => {
             <Button to="/contact">Contact Me</Button>
           </ButtonContainer>
         </HeroContent>
-        <HeroImage>
+        {/* <HeroImage>
           <motion.img 
             src="/profile.png" 
             alt="Profile" 
@@ -191,7 +191,7 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           />
-        </HeroImage>
+        </HeroImage> */}
       </HeroContainer>
     </HeroSection>
   );

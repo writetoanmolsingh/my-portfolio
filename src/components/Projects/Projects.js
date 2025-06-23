@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import projectImage from '../../assets/project.png';
 
 const ProjectsSection = styled.section`
   background-color: ${props => props.theme.colors.sectionBg};
@@ -125,27 +126,27 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-commerce Website',
-      category: 'Web Design',
-      description: 'A modern e-commerce platform with responsive design and seamless user experience.',
+      title: 'My Portfolio',
+      category: 'Frontend Web Development',
+      description: 'Developed a sleek personal portfolio using JavaScript and React, showcasing projects and skills. Added light/dark mode toggle and optimized for responsiveness and smooth navigation across devices.',
       image: '/projects/project1.jpg',
-      link: '#'
+      link: 'https://anmol-me.netlify.app/'
     },
     {
       id: 2,
-      title: 'Mobile Banking App',
-      category: 'App Development',
-      description: 'Secure and user-friendly mobile banking application with advanced features.',
+      title: 'My AI Chatbot',
+      category: 'Full-Stack AI Application',
+      description: 'Developed a fully responsive AI chatbot integrated with GPT-4o, featuring a React frontend and Python Flask backend. The system allows users to upload PDF files and delivers contextual insights by analyzing document content.',
       image: '/projects/project2.jpg',
-      link: '#'
+      link: 'https://my-ai-chatbot-mauve.vercel.app/'
     },
     {
       id: 3,
-      title: 'Dashboard UI Design',
-      category: 'UI/UX Design',
-      description: 'Clean and intuitive dashboard interface for data visualization and management.',
-      image: '/projects/project3.jpg',
-      link: '#'
+      title: 'Lactalisca Shipment Tracker',
+      category: 'Full Stack Web Application',
+      description: 'Built a full-stack delivery management system for Lactalis with real-time shipment tracking and an admin portal for uploading Excel-based shipment data, streamlining logistics and improving supply chain transparency.',
+      image: '/projects/project2.jpg',
+      link: 'https://lactalis-tracker-app-lactalisca.vercel.app/'
     }
   ];
 
@@ -176,7 +177,7 @@ const Projects = () => {
               transition={{ duration: 0.5 }}
             >
               <ProjectImage>
-                <img src={project.image} alt={project.title} />
+                <img src={projectImage} alt={project.title} />
               </ProjectImage>
               <ProjectInfo>
                 <ProjectTitle>{project.title}</ProjectTitle>
