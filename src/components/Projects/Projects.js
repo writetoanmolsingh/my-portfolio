@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import projectImage from '../../assets/project.png';
+import projectImage from '../../assets/project.jpg';
 
 const ProjectsSection = styled.section`
   background-color: ${props => props.theme.colors.sectionBg};
