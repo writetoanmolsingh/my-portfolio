@@ -129,7 +129,7 @@ const Projects = () => {
       title: 'My Portfolio',
       category: 'Frontend Web Development',
       description: 'Developed a sleek personal portfolio using JavaScript and React, showcasing projects and skills. Added light/dark mode toggle and optimized for responsiveness and smooth navigation across devices.',
-      image: '/projects/project1.jpg',
+      showLink: true,
       link: 'https://anmol-me.netlify.app/'
     },
     {
@@ -137,7 +137,7 @@ const Projects = () => {
       title: 'My AI Chatbot',
       category: 'Full-Stack AI Application',
       description: 'Developed a fully responsive AI chatbot integrated with GPT-4o, featuring a React frontend and Python Flask backend. The system allows users to upload PDF files and delivers contextual insights by analyzing document content.',
-      image: '/projects/project2.jpg',
+      showLink: true,
       link: 'https://my-ai-chatbot-mauve.vercel.app/'
     },
     {
@@ -145,7 +145,7 @@ const Projects = () => {
       title: 'Lactalisca Shipment Tracker',
       category: 'Full Stack Web Application',
       description: 'Built a full-stack delivery management system for Lactalis with real-time shipment tracking and an admin portal for uploading Excel-based shipment data, streamlining logistics and improving supply chain transparency.',
-      image: '/projects/project2.jpg',
+      showLink: false,
       link: 'https://lactalis-tracker-app-lactalisca.vercel.app/'
     }
   ];
@@ -183,7 +183,7 @@ const Projects = () => {
                 <ProjectTitle>{project.title}</ProjectTitle>
                 <ProjectCategory>{project.category}</ProjectCategory>
                 <ProjectDescription>{project.description}</ProjectDescription>
-                <ProjectLink href={project.link}>View Project</ProjectLink>
+                {project.showLink && <ProjectLink href={project.link}>View Project</ProjectLink>}
               </ProjectInfo>
             </ProjectCard>
           ))}
