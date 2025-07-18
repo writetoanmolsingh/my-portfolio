@@ -1,5 +1,4 @@
-import React from 'react';
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const ToggleContainer = styled.div`
   position: fixed;
@@ -16,7 +15,7 @@ const ToggleButton = styled.button`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: ${props => props.theme.colors.primary};
+  background-color: ${(props) => props.theme.colors.primary};
   color: white;
   border: none;
   display: flex;
@@ -25,11 +24,11 @@ const ToggleButton = styled.button`
   font-size: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-5px);
   }
-  
+
   i {
     transition: transform 0.5s ease;
   }
@@ -39,7 +38,7 @@ const ThemeToggle = ({ toggleTheme, currentTheme }) => {
   return (
     <ToggleContainer onClick={toggleTheme}>
       <ToggleButton aria-label="Toggle theme">
-        {currentTheme === 'light' ? (
+        {currentTheme === "light" ? (
           <i className="fas fa-moon"></i>
         ) : (
           <i className="fas fa-sun"></i>
@@ -49,4 +48,4 @@ const ThemeToggle = ({ toggleTheme, currentTheme }) => {
   );
 };
 
-export default ThemeToggle; 
+export default ThemeToggle;
