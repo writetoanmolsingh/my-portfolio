@@ -155,7 +155,6 @@ const Projects = () => {
       description:
         "Built a full-stack delivery management system for Lactalis with real-time shipment tracking and an admin portal for uploading Excel-based shipment data, streamlining logistics and improving supply chain transparency.",
       showLink: false,
-      link: "https://lactalis-tracker-app-lactalisca.vercel.app/",
     },
   ];
 
